@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: node-server-deployment
 spec:
-  replicas: 3  # Number of pods you want to run
+  replicas: 2  # Number of pods you want to run
   selector:
     matchLabels:
       app: node-server
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: node-server
-          image: safaabidi99/node-server:1.0  # Docker image from Docker Hub
+          image: safaabidi99/node-server:5.0  # Docker image from Docker Hub
           ports:
             - containerPort: 3000  # Port your Node.js app is running on

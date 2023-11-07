@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'node-server'
+    static_configs:
+      - targets: ['node-server:3000']  # Replace with your Node.js app's hostname and port

@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "fluent-logger": "^3.4.1",
+    "prom-client": "^15.0.0"
   }
 }
