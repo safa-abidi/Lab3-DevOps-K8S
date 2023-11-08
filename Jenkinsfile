@@ -1,15 +1,19 @@
 pipeline {
     agent any
+    tools {
+        nodejs 'node-21.0.1'
+    }
 
     stages {
         stage('Checkout') {
             steps {
                 // Checkout your source code from the version control system
-                sh 'git clone https://github.com/safa-abidi/Lab3-DevOps-K8S.git'
+                git 'https://github.com/safa-abidi/Lab3-DevOps-K8S.git'
             }
         }
         stage('Install Dependencies') {
             steps {
+                sh 'nodejs --version'
                 sh 'npm install'
             }
         }
