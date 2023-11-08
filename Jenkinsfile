@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your source code from the version control system
-                git 'https://github.com/safa-abidi/Lab3-DevOps-K8S.git'
+                sh 'git clone https://github.com/safa-abidi/Lab3-DevOps-K8S.git'
             }
         }
         stage('Install Dependencies') {
